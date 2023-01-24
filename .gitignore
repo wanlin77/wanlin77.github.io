@@ -3,8 +3,9 @@ Thumbs.db
 db.json
 *.log
 node_modules/
-## public/
+#public/
 .deploy*/
 _multiconfig.yml
 .idea
-.github
+#.github
+.github/dependabot.yml
