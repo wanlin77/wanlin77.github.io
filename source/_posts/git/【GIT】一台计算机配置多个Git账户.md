@@ -1,6 +1,12 @@
 ---
-title: 一台电脑配置多个git账户
+title: 一台计算机配置多个git账户
 date: 2023-10-05 18:49:59
+categories:
+  - [Coder, Git]
+  - [Coder, Windows]
+tags:
+  - Git
+  - 教程
 ---
 <br>
 &emsp;&emsp; 写作缘由：为了记住，在一台计算机上，配置多个git账户
@@ -107,53 +113,3 @@ IdentityFile ~\.ssh\id_rsa_work
 ```shell script
 git clone git@github.com:{owner-user-name}/{the-repo-name}
 ```
-
-
-### 下载安装GIT
-
-### 配置 SSH KEY
-
-#### 清空全局的邮箱和用户名称
-
-``` bash
-$ git config --global --unset user.name
-$ git config --global --unset user.email
-```
-
-如未配置过，可忽略
-
-#### 创建 SSH KEY
-`Windows`下打开`Git Bash`, 创建`SSH KEY`, 按提示输入密码，可以不填密码一路回车
-
-``` bash
-$ ssh-keygen -t ed25519 -C "注册邮箱" -f ~/.ssh/id_rsa_github
-$ ssh-keygen -t ed25519 -C "注册邮箱" -f ~/.ssh/id_rsa_work
-```
-
-`SSH KEY`类型较多，一般推荐使用`ed25519`或`rsa`，
-ed25519是目前最安全、加解密速度最快的key类型，由于其数学特性，它的key的长度比rsa小很多，优先推荐使用
-
-#### 添加`SHH`公钥
-接下来，把生成的公钥传入GitHub中，一般在`设置`里的`SSH and GPG keys`
-然后，选择`New SSH key`，并把`id_rsa_github`中的公钥复制进去
-
-#### 把SSH密钥加入`ssh-agent`并进行配置
-打开`~/.ssh/`下的`config`文件（若没有，新建即可），并输入以下信息闭关保存
-
-``` properties
-# 账号1-github
-HOST github.com
-Hostname github.com
-User your_git_user_name
-PreferredAuthentications publickey
-IdentityFile ~\.ssh\id_rsa
-
-
-# 账号2-公司的gitlab
-HOST work.com
-Hostname your_company_git_lab_host
-User your_company_user_account
-PreferredAuthentications publickey
-IdentityFile ~\.ssh\id_rsa_work_trip
-```
-
