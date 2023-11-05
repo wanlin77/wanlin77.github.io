@@ -3,10 +3,9 @@ title: 一台计算机配置多个git账户
 date: 2023-10-05 18:49:59
 categories:
   - [Coder, Git]
-  - [Coder, Windows]
 tags:
   - Git
-  - 教程
+  - Tutorial
 ---
 <br>
 &emsp;&emsp; 写作缘由：为了记住，在一台计算机上，配置多个git账户
@@ -17,6 +16,8 @@ tags:
 - Step 3 : 将`SSH公钥`添加至github或其他gitlab等git托管网站
 - Step 4 : 创建配置文件，完成多账户配置
 - Step 5 : 使用不同账户从gitlab上clone
+
+<br>
 <hr>
 
 ### Step 1
