@@ -2,7 +2,7 @@
 title: 【VIM】【3】vi命令行模式
 date: 2023-10-09 21:12:27
 categories:
-  - 【Coder, Vim】
+  - [Coder, Vim]
 tags:
   - Vim
 ---

@@ -2,7 +2,7 @@
 title: 【VIM】【1】vi一般命令模式
 date: 2023-10-07 02:22:15
 categories:
-  - 【Coder, Vim】
+  - [Coder, Vim]
 tags:
   - Vim
 ---

@@ -2,7 +2,7 @@
 title: 【VIM】【2】vi编辑模式
 date: 2023-10-08 21:24:55
 categories:
-  - 【Coder, Vim】
+  - [Coder, Vim]
 tags:
   - Vim
 ---
