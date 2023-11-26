@@ -90,17 +90,17 @@ touch config
 ```
 # 账号1-github
 Host github.com
-Hostname github.com
-User one
-PreferredAuthentications publickey
-IdentityFile ~\.ssh\id_rsa_github
+ Hostname github.com
+ User one
+ PreferredAuthentications publickey
+ IdentityFile ~\.ssh\id_rsa_github
 
 # 账号2-公司的gitlab
 Host ctripcorp.com
-Hostname company_git_lab_website # such as : git.xxx.yyy.com
-User two
-PreferredAuthentications publickey
-IdentityFile ~\.ssh\id_rsa_work
+ Hostname company_git_lab_website # such as : git.xxx.yyy.com
+ User two
+ PreferredAuthentications publickey
+ IdentityFile ~\.ssh\id_rsa_work
 ```
 
 <hr>
